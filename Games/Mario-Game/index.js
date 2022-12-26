@@ -31,9 +31,7 @@ class Player {
         this.position.x += this.velocity.x
         this.position.y += this.velocity.y
 
-        // if (this.position.x + this.width <= canvas.width)
-        //     this.velocity.x += 1
-        // else this,velocity.x = 0
+        
         
         if (this.position.y + this.height + this.velocity.y <= canvas.height)
             this.velocity.y += gravity
@@ -41,8 +39,25 @@ class Player {
     }
 }
 
+class Platform  {
+    constructor () {
+       this.position ={ 
+            x : 300, 
+            y : 100
+       }
+       this.width = 200
+       this.height = 50
+    }
+
+    draw() {
+        c.fillStyle = 'black'
+        c.fillRect(this.position.x, this.position.y, this.width, this.height) 
+    }
+}
+
 const player = new Player()
-player.update() 
+const platform = new Platform()
+
 
 const keys = {
     right : {
@@ -57,12 +72,22 @@ function animate() {
     requestAnimationFrame(animate)
     c.clearRect(0, 0, canvas.width, canvas.height)
     player.update()
+    platform.draw()
 
     if (keys.right.pressed){
         player.velocity.x = 5
-    }else if (keys.left.pressed){
+    }
+    else if (keys.left.pressed){
         player.velocity.x = -5
-    }else player.velocity.x = 0
+    }
+    else player.velocity.x = 0
+
+    
+    if (player.position.y + player.height <= platform.position.y && player.position.y + player.height + player.velocity.y >= platform.position.y && player.position.x + player.width >= platform.position.x && player.position.x <= platform.position.x + platform.width ){
+        player.velocity.y = 0
+    }
+    
+
 }
 
 animate()
