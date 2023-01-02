@@ -1,3 +1,7 @@
+import platform from './img/platform.png'
+
+console.log(platform)
+
 const canvas = document.querySelector('canvas')
 
 const c = canvas.getContext('2d')
