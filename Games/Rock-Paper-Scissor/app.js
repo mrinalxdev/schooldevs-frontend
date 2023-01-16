@@ -17,17 +17,26 @@ else if (userInput == 3){
     console.log('Scissor')
 }
 
-let randomNumber = 3
+let randomNumber = Math.floor(Math.random() * 4)
+if (randomNumber == 1) {
+    console.log('Rock')
+}
+else if (randomNumber == 2) {
+    console.log('Paper')
+}
+else if (randomNumber == 3){
+    console.log('Scissor')
+}
 
-// if (randomNumber == 1 && randomNumber == userInput){
-//     console.log('Draw')
-// }
-// else if (randomNumber == 2 && randomNumber == userInput){
-//     console.log('Draw')
-// }
-// else if (randomNumber == 3 && randomNumber == userInput) {
-//     console.log('Draw')
-// }
+if (randomNumber == 1 && randomNumber == userInput){
+    console.log('Draw')
+}
+else if (randomNumber == 2 && randomNumber == userInput){
+    console.log('Draw')
+}
+else if (randomNumber == 3 && randomNumber == userInput) {
+    console.log('Draw')
+}
 
 
 // Win Case for the User 
