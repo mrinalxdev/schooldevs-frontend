@@ -1,34 +1,53 @@
 // USING NUMBER 
-console.log("this will be the game using Number Matching")
+console.log(`
+    1 : Rock,
+    2 : Paper,
+    3 : Scissors
+`)
 
-let userInput1 = 2
+let userInput = prompt('Enter the Desired Event')
 
-if (userInput1 >= 1){
-    console.log("The Game Begins")
-
-    console.log("1 : Rock")
-    console.log("2 : Paper")
-    console.log("3 : Scissors")
-
-    let randomNumber = Math.floor((Math.random()*4))
-    
-    if (randomNumber == 1 || randomNumber == 2 || randomNumber == 3) {
-        console.log("Valid Numbers Entered")
-        console.log(randomNumber)
-    }
-
-    if (randomNumber == 1) {
-        console.log("ROCK")
-    }
-    else if (randomNumber == 2) {
-        console.log("Paper")
-    }
-    else if (randomNumber == 3){
-        console.log("Scissor")
-    }
-    
-    
+if (userInput == 1) {
+    console.log('Rock')
 }
-else{
-    console.log("Please enter any Valid Number to start")
+else if (userInput == 2) {
+    console.log('Paper')
+}
+else if (userInput == 3){
+    console.log('Scissor')
+}
+
+let randomNumber = 3
+
+// if (randomNumber == 1 && randomNumber == userInput){
+//     console.log('Draw')
+// }
+// else if (randomNumber == 2 && randomNumber == userInput){
+//     console.log('Draw')
+// }
+// else if (randomNumber == 3 && randomNumber == userInput) {
+//     console.log('Draw')
+// }
+
+
+// Win Case for the User 
+if (randomNumber == 1 && userInput == 2) {
+    console.log('Win for the User')
+}
+else if (randomNumber == 2 && userInput == 3) {
+    console.log('Win for User')
+}
+else if (randomNumber == 3 && userInput == 1){
+    console.log('Win for User')
+}
+
+//Win Cases for the Computer 
+if (randomNumber == 1 && userInput == 3){
+    console.log('Win for the Comp')
+}
+else if (randomNumber == 2 && userInput == 1){
+    console.log('Win for the Comp')
+}
+else if (randomNumber == 3 && userInput == 2) {
+    console.log('Win for the Comp')
 }
