@@ -1,0 +1,26 @@
+{
+    "name": "Mrinal's PWA",
+    "short_name" : "QuizVerse Demo",
+    "start_url" : ".",
+    "background_color" : "#5B8FB9",
+    "theme_color": "#03001C",
+    "display_property" : "standalone",
+    "icons" : [
+        {
+            "src" : "images/logo1.jpg",
+            "sizes": "640x427",
+            "type": "image/jpg"
+        },
+        {
+            "src" : "images/logo2.jpg",
+            "sizes": "192x128",
+            "type": "image/jpg"
+        },
+        {
+            "src" : "images/logo3.png",
+            "sizes" : "512x342",
+            "type" : "images/png"
+        }
+    ]
+
+}
