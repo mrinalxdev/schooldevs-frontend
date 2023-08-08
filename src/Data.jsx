@@ -1,6 +1,7 @@
 import { FiPenTool } from "react-icons/fi";
 import { FaLaptopCode } from "react-icons/fa";
 import { MdOutlineScience } from "react-icons/md";
+import { BsBarChartLine} from 'react-icons/bs'
 
 import courses1 from "./assets/courses1.jpg";
 import courses2 from "./assets/courses2.jpg";
@@ -25,24 +26,47 @@ export const navLinks = [
     link: "Home",
   },
   {
-    id: 1,
+    id: 2,
     href: "about",
     link: "About",
   },
   {
-    id: 1,
+    id: 3,
     href: "courses",
     link: "Courses",
   },
   {
-    id: 1,
+    id: 4,
     href: "teacher",
     link: "Teacher",
   },
   {
-    id: 1,
+    id: 5,
     href: "contact",
     link: "Contact",
+  },
+];
+
+export const categories = [
+  {
+    id: 1,
+    icon: <FiPenTool />,
+    category: "Design",
+  },
+  {
+    id: 2,
+    icon: <FaLaptopCode />,
+    category: "Development",
+  },
+  {
+    id: 3,
+    icon: <BsBarChartLine />,
+    category: "Business",
+  },
+  {
+    id: 4,
+    icon: <MdOutlineScience />,
+    category: "Science",
   },
 ];
 
