@@ -6,7 +6,7 @@ import {
   About,
   Teacher,
   Contact,
-  Course,
+  Courses,
   Footer,
 } from "./components/index";
 
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <Course />
+        <Courses />
         <Teacher />
         <Contact />
         <Footer />

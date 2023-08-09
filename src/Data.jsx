@@ -32,8 +32,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    href: "courses",
-    link: "Courses",
+    href: "course",
+    link: "Course",
   },
   {
     id: 4,
