@@ -1,3 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+
 import {
   Navbar,
   Home,
@@ -7,6 +9,7 @@ import {
   Course,
   Footer,
 } from "./components/index";
+
 
 function App() {
   return (

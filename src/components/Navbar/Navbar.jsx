@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
+import { Link } from 'react-router-dom'
 import { navLinks } from "../../Data";
 import NavLink from "./NavLink";
 import MobileNavLinks from "./MobileNavLinks";
@@ -24,9 +25,11 @@ const Navbar = () => {
               return <NavLink key={navLink.id} {...navLink} />;
             })}
           </div>
+          <Link to="https://youtube.com">
           <button className="py-3 px-6 font-bold text-sm border-solid border rounded-lg border-gray">
             Sign Up
           </button>
+          </Link>
           {toggle && (
             <div className="fixed h-full w-96 top-0 left-0 z-20 bg-Teal text-white flex flex-col justify-center items-center shadow-lg gap-8 py-8">
               {navLinks.map((navLink) => {
