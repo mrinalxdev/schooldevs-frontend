@@ -151,17 +151,21 @@ export const accordions = [
   {
     id: 1,
     title: "What is Skillex?",
+    para : "What is this Yrr"
   },
   {
     id: 2,
     title: "What can I learn from Skillex?",
+    para : "What is this Yrr"
   },
   {
     id: 3,
     title: "Can I teach on Skillex?",
+    para : "What is this Yrr"
   },
   {
     id: 4,
     title: "What is included in my Skillex membership?",
+    para : "What is this Yrr"
   },
 ];
