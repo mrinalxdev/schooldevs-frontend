@@ -1,5 +1,6 @@
 import React from "react";
 import about from "../../assets/About.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -10,13 +11,20 @@ const About = () => {
         </div>
         <div>
           <div className="font-bold sm:text-[1.875rem] text-[1.5rem] mb-5">
-            We Provide the <br /> best{" "}
-            <span className="text-Teal">online courses</span>
+            What does this platform provides ?
           </div>
           <p className="text-sm text-gray leading-7 mb-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci reiciendis qui in nihil cumque iusto porro illum odio sapiente, explicabo modi similique architecto atque molestiae provident, repellat praesentium impedit sunt sint quo magni voluptatibus!
-        </p>
-        <button className="py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold">Know More</button>
+            We present a seamless pathway for aspiring juniors keen on delving
+            into new technologies. Our platform simplifies the learning journey,
+            providing an accessible route for those eager to explore the realm
+            of technology. Created with a student's perspective in mind, our
+            platform aims to empower the next generation of learners.
+          </p>
+          <Link to="https://www.github.com/mrinalxdev">
+            <button className="py-3 px-6 text-sm border border-solid border-gray rounded-lg font-bold">
+              Who built this ?
+            </button>
+          </Link>
         </div>
       </div>
     </div>

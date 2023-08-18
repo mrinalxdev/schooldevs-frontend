@@ -8,13 +8,13 @@ const Courses = () => {
     <div className="section" id="course">
       <div className="text-center">
         <div className="sm:text-3xl text-2xl font-bold mb-5">
-          Our Top <span className="text-Teal">Categories</span>
+          Trending <span className="text-Teal">Technologies</span>
         </div>
         <p className="text-sm text-gray leading-7 max-w-[700px] mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          reprehenderit earum labore dolores omnis, laborum mollitia a expedita
-          voluptatem illo impedit eveniet eius tempora? Hic facere eligendi sed
-          consectetur voluptas praesentium neque quis animi.
+          The technology landscape is ever-evolving, and several trends have
+          captured the attention of the developer community. If you're looking
+          to dive into the developer community, consider these trending
+          technologies:
         </p>
       </div>
       <div className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8">

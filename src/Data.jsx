@@ -51,22 +51,22 @@ export const categories = [
   {
     id: 1,
     icon: <FiPenTool />,
-    category: "Design",
+    category: "Artificial Intelligence",
   },
   {
     id: 2,
     icon: <FaLaptopCode />,
-    category: "Development",
+    category: "Full Stack Development",
   },
   {
     id: 3,
     icon: <BsBarChartLine />,
-    category: "Business",
+    category: "Cloud Computing",
   },
   {
     id: 4,
     icon: <MdOutlineScience />,
-    category: "Science",
+    category: "Blockchain",
   },
 ];
 

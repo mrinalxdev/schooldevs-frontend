@@ -21,7 +21,6 @@ function App() {
         <Courses />
         <Teacher />
         <Contact />
-        <Footer />
       </h1>
     </>
   );
